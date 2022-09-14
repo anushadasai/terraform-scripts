@@ -1,4 +1,12 @@
 # for base/network.tf
+variable "access_key" {
+  type        = string
+  description = "AWS credentials."
+}
+variable "secret_key" {
+  type        = string
+  description = "AWS credentials."
+}
 variable "cluster_name" {
   type        = string
   description = "EKS cluster name."
