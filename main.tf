@@ -4,6 +4,7 @@ module "base" {
   
   acess_key               = var.acess_key
   secret_key              = var.secret_key
+  region                  = var.region
   cluster_name            = var.cluster_name
   name_prefix             = var.name_prefix
   main_network_block      = var.main_network_block
