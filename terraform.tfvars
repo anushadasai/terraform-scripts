@@ -1,7 +1,3 @@
-access_key = AKIATU5ZYTMOU3KJ7KN5
-secret_key = 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
-region     = us-east-1
-
 autoscaling_average_cpu = 30
 eks_managed_node_groups = {
   "my-app-eks-x86" = {
