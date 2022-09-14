@@ -7,6 +7,10 @@ variable "secret_key" {
   type        = string
   description = "AWS credentials."
 }
+variable "region" {
+  type        = string
+  description = "EKS cluster region."
+}
 variable "cluster_name" {
   type        = string
   description = "EKS cluster name."
