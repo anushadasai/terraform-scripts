@@ -1,17 +1,12 @@
 autoscaling_average_cpu = 30
 eks_managed_node_groups = {
   "my-app-eks-x86" = {
-    ami_type     = "AL2_x86_64"
+    ami_type     = "ami-052efd3df9dad4825"
     min_size     = 1
     max_size     = 16
     desired_size = 1
     instance_types = [
-      "t3.small",
-      "t3.medium",
-      "t3.large",
-      "t3a.small",
-      "t3a.medium",
-      "t3a.large"
+      "t3.medium"
     ]
     capacity_type = "SPOT"
     network_interfaces = [{
@@ -20,15 +15,14 @@ eks_managed_node_groups = {
     }]
   }
   "my-app-eks-arm" = {
-    ami_type     = "AL2_ARM_64"
+    ami_type     = "ami-052efd3df9dad4825"
     min_size     = 1
     max_size     = 16
     desired_size = 1
     instance_types = [
-      "c7g.medium",
-      "c7g.large"
+      "t3.medium"
     ]
-    capacity_type = "ON_DEMAND"
+    capacity_type = "SPOT"
     network_interfaces = [{
       delete_on_termination       = true
       associate_public_ip_address = true
