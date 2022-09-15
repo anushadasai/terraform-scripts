@@ -1,9 +1,9 @@
-autoscaling_average_cpu = 30
+autoscaling_average_cpu = 20
 eks_managed_node_groups = {
   "my-app-eks-x86" = {
     ami_type     = "ami-052efd3df9dad4825"
     min_size     = 1
-    max_size     = 16
+    max_size     = 4
     desired_size = 1
     instance_types = [
       "t3.medium"
@@ -17,7 +17,7 @@ eks_managed_node_groups = {
   "my-app-eks-arm" = {
     ami_type     = "ami-052efd3df9dad4825"
     min_size     = 1
-    max_size     = 16
+    max_size     = 4
     desired_size = 1
     instance_types = [
       "t3.medium"
